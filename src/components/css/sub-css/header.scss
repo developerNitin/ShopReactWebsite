@@ -34,6 +34,7 @@ body {
   font-family: "rob-reg";
   color: rgb(104, 111, 122);
   font-size: 14px;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -50,12 +51,17 @@ body {
 
 .search-form-in-header {
   margin: 0 25px;
+  flex-grow: 1;
   form {
     display: flex;
     align-items: center;
     flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
     input {
       margin: 0;
+      flex-grow: 1;
       height: 22px;
       padding: 10px 12px;
       border: 1px solid rgb(242, 243, 245);
@@ -108,9 +114,10 @@ body {
   align-items: center;
 }
 
-.header-right-section {
-  position: absolute;
-  right: 20px;
+.header-left-section {
+  flex-grow: 1;
+  min-width: 1px;
+  justify-content: space-between;
 }
 
 .deal-of-the-day,

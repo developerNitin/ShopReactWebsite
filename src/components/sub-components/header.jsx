@@ -11,7 +11,7 @@ function Header() {
         <div className="header-left-section">
           <div className="categories-in-header">
             <a>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.7 45.6">
+              <svg viewBox="0 0 45.7 45.6">
                 <title>Categories</title>
                 <g id="Layer_2" data-name="Layer 2">
                   <g id="Layer_2-2" data-name="Layer 2">
@@ -107,7 +107,7 @@ function Header() {
           </div>
           <div className="contact-on-header">
             <a>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47">
+              <svg viewBox="0 0 47 47">
                 <title>Contact</title>
                 <g id="Layer_2" data-name="Layer 2">
                   <g id="Layer_2-2" data-name="Layer 2">
@@ -122,7 +122,7 @@ function Header() {
           </div>
           <div className="notification-on-header">
             <a>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.92 51.18">
+              <svg viewBox="0 0 52.92 51.18">
                 <title>Notifications</title>
                 <g id="Layer_2" data-name="Layer 2">
                   <g id="Layer_2-2" data-name="Layer 2">
@@ -137,7 +137,7 @@ function Header() {
           </div>
           <div className="kart-on-header">
             <a>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.27 50.86">
+              <svg viewBox="0 0 50.27 50.86">
                 <title>Kart</title>
                 <g id="Layer_2" data-name="Layer 2">
                   <g id="Layer_2-2" data-name="Layer 2">

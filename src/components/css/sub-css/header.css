@@ -40,6 +40,9 @@ body button {
   font-family: "rob-reg";
   color: #686f7a;
   font-size: 14px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-logo {
@@ -54,6 +57,9 @@ body button {
 
 .search-form-in-header {
   margin: 0 25px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .search-form-in-header form {
@@ -67,10 +73,18 @@ body button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .search-form-in-header form input {
   margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 22px;
   padding: 10px 12px;
   border: 1px solid #f2f3f5;
@@ -152,9 +166,14 @@ body button {
           align-items: center;
 }
 
-.header-right-section {
-  position: absolute;
-  right: 20px;
+.header-left-section {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 1px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .deal-of-the-day,
