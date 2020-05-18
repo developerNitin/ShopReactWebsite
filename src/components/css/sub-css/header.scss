@@ -1,11 +1,188 @@
+@font-face {
+  src: url("../../fonts/Roboto/Roboto-Bold.ttf");
+  font-family: "rob-bold";
+}
+
+@font-face {
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+  font-family: "rob-reg";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  a,
+  button {
+    cursor: pointer;
+  }
+}
+
 .main-header {
   height: 65px;
   width: 100vw;
+  overflow-x: hidden;
+  box-shadow: rgba(20, 23, 28, 0.1) 0px 0px 1px 1px,
+    rgba(20, 23, 28, 0.1) 0px 3px 1px 0px;
 }
 
 .sub-main-header-div {
   height: 65px;
-  width: 100vw;
+  width: calc(100vw-40px);
   display: flex;
   flex-direction: row;
+  padding: 0 20px;
+  font-family: "rob-reg";
+  color: rgb(104, 111, 122);
+  font-size: 14px;
+}
+
+.header-logo {
+  width: 124px;
+  height: 65px;
+}
+
+.categories-in-header {
+  svg {
+    height: 12.5px;
+    fill: rgb(104, 111, 122);
+  }
+}
+
+.search-form-in-header {
+  margin: 0 25px;
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    input {
+      margin: 0;
+      height: 22px;
+      padding: 10px 12px;
+      border: 1px solid rgb(242, 243, 245);
+      border-right: none;
+      font-size: 13px;
+      font-family: "rob-reg";
+      color: rgb(104, 111, 122);
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      background-color: rgb(242, 243, 245);
+    }
+    input::placeholder {
+      color: rgb(123, 130, 142);
+    }
+    input:focus {
+      outline: none !important;
+      background-color: white;
+      border: 1px solid rgba(20, 23, 28, 0.05);
+    }
+    button {
+      margin: 0;
+      width: 43px;
+      height: 44px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(242, 243, 245);
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      svg {
+        height: 14px;
+        fill: rgb(236, 82, 82);
+      }
+    }
+    button:hover {
+      background-color: rgb(236, 82, 82);
+      svg {
+        fill: white;
+      }
+    }
+  }
+}
+
+.header-right-section,
+.header-left-section {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-right-section {
+  position: absolute;
+  right: 20px;
+}
+
+.deal-of-the-day,
+.sell-on-shop,
+.orders-on-header,
+.contact-on-header,
+.notification-on-header,
+.kart-on-header,
+.categories-in-header {
+  display: flex;
+  align-items: center;
+  margin: 0 2px;
+  height: 65px;
+  a {
+    border: 1px solid transparent;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 3px;
+  }
+
+  a:hover {
+    border-color: rgba(20, 23, 28, 0.05);
+    background-color: rgb(243, 243, 243);
+  }
+}
+
+.header-right-section-divider {
+  height: 39px;
+  margin: 0 8px;
+  border-left: 1px solid rgb(222, 223, 224);
+}
+
+.orders-on-header {
+  svg {
+    fill: rgb(104, 111, 122);
+    width: 10px;
+    opacity: 0.9;
+  }
+}
+
+.contact-on-header,
+.notification-on-header,
+.kart-on-header {
+  a {
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    height: 20px;
+    svg {
+      fill: rgb(80, 87, 99);
+      height: 20px;
+    }
+  }
+}
+.notification-on-header {
+  a {
+    padding: 10px 9.5px 10px 9.6px;
+  }
+}
+
+.user-profile-in-header {
+  padding: 0 0 0 4px;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    background-color: rgb(104, 111, 122);
+    span {
+      font-size: 15px;
+      color: white;
+    }
+  }
 }
